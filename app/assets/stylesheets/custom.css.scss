@@ -1,1 +1,46 @@
 @import "bootstrap";
+
+
+
+/*Centers text within the content*/
+.center {
+    text-align: center;
+}
+
+/*Changes the backgroud of main content in jumbotron*/
+.jumbotron {
+    background-image: asset-url('cover_image.jpg');
+    background-size: cover;
+    height: 375px;
+}
+
+.jumbotron h1,
+    h2 {
+        color: #ffffff;
+        font-weight: bold;
+        letter-spacing: -1px;
+    }
+
+.jumbotron h1 {
+    font-size: 63px;
+}
+
+.btn-xlarge {
+    background-color: #073B15;
+}
+
+.btn-xlarge:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+#logo {
+    font-weight: bold;
+}
+
+/*Changes the background color of navbar*/
+.bg-dark-green {
+    background-color: #073B15;
+}
+
