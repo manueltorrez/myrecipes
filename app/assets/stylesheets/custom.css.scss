@@ -14,15 +14,19 @@
     height: 375px;
 }
 
-.jumbotron h1,
-    h2 {
+.jumbotron h1 {
+        font-size: 63px;
         color: #ffffff;
         font-weight: bold;
         letter-spacing: -1px;
     }
 
-.jumbotron h1 {
+.jumbotron h2 {
     font-size: 63px;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: -1px;
+    text-align: center;
 }
 
 .btn-xlarge {
