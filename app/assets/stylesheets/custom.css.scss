@@ -1,6 +1,6 @@
 @import "bootstrap";
 
-
+$primary-colour: #073B15;
 
 /*Centers text within the content*/
 .center {
@@ -30,7 +30,7 @@
 }
 
 .btn-xlarge {
-    background-color: #073B15;
+    background-color: $primary-colour;
 }
 
 .btn-xlarge:hover {
@@ -45,6 +45,22 @@
 
 /*Changes the background color of navbar*/
 .bg-dark-green {
-    background-color: #073B15;
+    background-color: $primary-colour;
+}
+
+.description {
+    margin-top: 0;
+}
+
+.card a {
+    color: $primary-colour;
+}
+
+.chef-info {
+    margin-top: 10px;
+}
+
+.color-match a {
+    color: $primary-colour;
 }
 
