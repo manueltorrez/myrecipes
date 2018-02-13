@@ -21,6 +21,12 @@
                         <div class="float-right"> <%= time_ago_in_words(@recipe.created_at) %> ago </div>
                     </p>
                 </div>
+                <div class="recipe-actions">
+                    <%= link_to "Edit this recipe", edit_recipe_path(@recipe), class: "btn btn-sm btn-warning" %>
+                    <%= link_to "Delete this recipe", recipe_path(@recipe), method: :delete, 
+                                                data: { confirm: "Are you sure want to delete this recipe" },
+                                                class: "btn btn-sm btn-danger" %>
+                </div>
             </div>
         </div>
     </div>
