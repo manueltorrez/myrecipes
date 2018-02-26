@@ -1,3 +1,11 @@
 <%= render 'shared/page_title', title: "Showing all recipes" %>
 
+<div class="row col-2 mx-auto">
+    <%= will_paginate %>
+</div>
+
 <%= render 'recipe', obj: @recipes %>
+
+<div class="row col-2 mx-auto">
+    <%= will_paginate %>
+</div>

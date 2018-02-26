@@ -7,4 +7,15 @@
 </div>
 
 <h4 align="center"><%= @chef.chefname %>'s recipes</h4>
-<%= render 'recipes/recipe', obj: @chef.recipes %>
+
+<br>
+
+<div class="row col-2 mx-auto">
+    <%= will_paginate @chef_recipes %>
+</div>
+
+<%= render 'recipes/recipe', obj: @chef_recipes %>
+
+<div class="row col-2 mx-auto">
+    <%= will_paginate @chef_recipes %>
+</div>
