@@ -10,14 +10,14 @@ class ChefsShowTestTest < ActionDispatch::IntegrationTest
     @recipe2.save
   end
 
-  def "should get chefs show" do 
+  test "should get chefs show" do 
     get chef_path(@chef)
     assert_template 'chefs/show'
     assert_select "a[href=?]", recipe_path(@recipe), text: @recipe.name
     assert_select "a[href=?]", recipe_path(@recipe2), text: @recipe2.name
     assert_match @recipe.description, response.body
     assert_match @recipe2.description, response.body
-    assert_math @chef.chefname, response.body
+    assert_match @chef.chefname, response.body
   end
 
 end
